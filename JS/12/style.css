@@ -10,7 +10,7 @@ main {
     ".  p ."
     " . sb .";
   grid-template-columns: 4fr 6fr 4fr;
-  grid-template-rows:25px 70px 70px 70px 70px 70px 70px 35px;
+  grid-template-rows:25px 75px 95px 75px 75px 75px 75px 75px;
   font-size: 20px;
   text-align: center;
   height: 100vh;
@@ -62,4 +62,9 @@ border-bottom-right-radius: 10px;
 .subButton button{
     border-radius: 15px;
     padding: 5px;
+}
+
+p {
+  margin: 0;
+  color: brown;
 }

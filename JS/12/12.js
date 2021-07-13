@@ -1,13 +1,34 @@
+let errEmail=document.createElement('p')
+errEmail.innerHTML="неверный email"
+
+let errFile=document.createElement('p')
+errFile.innerHTML="слишком большой файл"
+
+let errAge=document.createElement('p')
+errAge.innerHTML="неверный возраст"
+
+let errName=document.createElement('p')
+errName.innerHTML="неверное имя"
+
+let errLastName=document.createElement('p')
+errLastName.innerHTML="неверная фамилия"
+
+let errPassword=document.createElement('p')
+errPassword.innerHTML="неверный пароль"
+
+
+
+
 function trueEmail() {
   let valEmail = document.querySelector(".email").value;
   let inEmail = document.querySelector(".inEmail");
   let re =
     /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   if (re.test(String(valEmail).toLowerCase())) {
-    inEmail.style.color = "black";
     return true;
   } else {
-    inEmail.style.color = "red";
+   
+    inEmail.appendChild(errEmail)
     return false;
   }
 }
@@ -21,8 +42,7 @@ function Filevalidation  ()  {
   
     return true
   }  else {
-    inAvatar.style.color = "red";
-    alert("слишком большой файл");
+    inAvatar.appendChild(errFile)
     return false
   }
 }
@@ -33,10 +53,9 @@ function ageValidation(){
   let inAge = document.querySelector(".inAge");
   let re = /^(\d){1,3}$/g
   if(re.test(String(age))){
-    inAge.style.color = "black";
     return true
   }else{
-    inAge.style.color = "red";
+    inAge.appendChild(errAge)
     return false
   }
   
@@ -46,10 +65,9 @@ function nameValidation(){
   let name = document.querySelector(".name").value
   let inName = document.querySelector(".inName");
   if(name.length >1 ){
-    inName.style.color = "black";
     return true
   }else{
-    inName.style.color = "red";
+    inName.appendChild(errName)
     return false
   }
 }
@@ -59,11 +77,9 @@ function lastNameValidation(){
   let lastName = document.querySelector(".lastName").value
   let inLastName = document.querySelector(".inLastName");
   if(lastName.length >1 ){
-   
-    inLastName.style.color = "black";
     return true
   }else{
-    inLastName.style.color = "red";
+    inLastName.appendChild(errLastName)
     return false
   }
 }
@@ -77,7 +93,7 @@ function truePassword() {
     inPassword.style.color = "black";
     return true;
   } else {
-    inPassword.style.color = "red";
+    inPassword.appendChild(errPassword)
 
     return false;
   }
@@ -88,7 +104,6 @@ function validAll(){
   // console.log(trueEmail()&&Filevalidation ()&&ageValidation()&&nameValidation()&&lastNameValidation()&&truePassword())
   if(trueEmail()&&Filevalidation ()&&ageValidation()&&nameValidation()&&lastNameValidation()&&truePassword()){
     let but = document.querySelector(".subButton button")
-    console.log("but")
     but.removeAttribute("disabled")
   }
 }
