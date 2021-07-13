@@ -1,4 +1,4 @@
-cd var/www/html/logs     #переход в папку logs
+п»їcd var/www/html/logs     #РїРµСЂРµС…РѕРґ РІ РїР°РїРєСѓ logs
 
 
 

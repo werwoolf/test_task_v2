@@ -10,13 +10,17 @@ let obj = {
 
 function objectToArray(obj) {
   let rezult = [];
-
-  Object.entries(obj).forEach(([key, value]) =>
-  rezult.push(key,value)
-    // console.log(`${key}: ${value}`)
-  );
+  for (key in obj) {
+    let subArr = [];
+    if(typeof obj[key]=='object'){
+      subArr.push(key, objectToArray(obj[key]))
+    }else{
+      subArr.push(key, obj[key]);
+    }
+    
+    rezult.push(subArr);
+  }
+  return rezult;
 }
+console.log(objectToArray(obj))
 
-objectToArray(obj);
-
-console.log(Object.entries(obj));

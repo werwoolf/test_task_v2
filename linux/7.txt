@@ -1,1 +1,1 @@
-find var/www/html/images -size +2M
+﻿find var/www/html/images -size +2M

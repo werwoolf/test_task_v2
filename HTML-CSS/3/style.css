@@ -1,25 +1,44 @@
-.container{
-    position: relative;
-    background-image:url(./Природа.jpg) ;
+img {
+  width: 100%;
+}
+
+.cont {
+  position: relative;
 }
 
 .text-top-left {
-    background-color: rgba(0, 0, 0, 0.603);
-    color: rgb(247, 238, 225);
-    padding: 5px;
-    position: absolute;
+  background-color: rgba(0, 0, 0, 0.603);
+  color: rgb(247, 238, 225);
+  position: absolute;
+  left: 0;
+  top: 0;
 }
-img{
-    position: absolute;
-    width: 100%;
+.text-top-right {
+  background-color: rgba(0, 0, 0, 0.603);
+  color: rgb(247, 238, 225);
+  position: absolute;
+  right: 0;
+  top: 0;
 }
-
-
-.baner {
-    background-color: rgba(0, 0, 0, 0.603);
-    color: rgb(247, 238, 225);
-    padding: 5px;
-    position: absolute;
-    
-   
+.text-bottom-right {
+  background-color: rgba(0, 0, 0, 0.603);
+  color: rgb(247, 238, 225);
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.text-bottom-left {
+  background-color: rgba(0, 0, 0, 0.603);
+  color: rgb(247, 238, 225);
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.text-center {
+  background-color: rgba(0, 0, 0, 0.603);
+  color: rgb(247, 238, 225);
+  position: absolute;
+  left: 50%;
+  bottom: 50%;
+  transform: translate(-50%, -50%);
 }

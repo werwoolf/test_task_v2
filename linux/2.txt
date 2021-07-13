@@ -1,2 +1,2 @@
-cd var/www/html/logs                #переход в папку с файлом error.txt
-sed -i '/^$/d' error.txt            #удаление пустых строк в error.txt
+п»їcd var/www/html/logs                #РїРµСЂРµС…РѕРґ РІ РїР°РїРєСѓ СЃ С„Р°Р№Р»РѕРј error.txt
+sed -i '/^$/d' error.txt            #СѓРґР°Р»РµРЅРёРµ РїСѓСЃС‚С‹С… СЃС‚СЂРѕРє РІ error.txt

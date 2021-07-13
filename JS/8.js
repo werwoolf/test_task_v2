@@ -54,5 +54,5 @@ function array_pluck_avg(arr, key) {
   return akk.toFixed(2)
 }
 
-console.log(array_pluck_avg(testData3, "skills.php"))
+console.log(array_pluck_avg(testData3, "skills"))
 

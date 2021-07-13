@@ -13,10 +13,10 @@ var arr = [
 
 function arrayToObject(arr) {
   let rezult = {};
+
   for (i = 0; i < arr.length; i++) {
     if (Array.isArray(arr[i][1])) {
-      console.log(arr[i][0]);
-      rezult[arr[i][0]] = arrayToObject(arr[i]);
+      rezult[arr[i][0]]=arrayToObject(arr[i][1]);
     } else {
       rezult[arr[i][0]] = arr[i][1];
     }

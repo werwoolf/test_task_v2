@@ -1,1 +1,1 @@
-echo -n var/www/html/logs/access.txt    #очистка указаного файла
+п»їecho -n var/www/html/logs/access.txt    #РѕС‡РёСЃС‚РєР° СѓРєР°Р·Р°РЅРѕРіРѕ С„Р°Р№Р»Р°

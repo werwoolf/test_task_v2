@@ -1,0 +1,9 @@
+﻿chmod a-rwx        var/www/html/images     #отобрать все права у всех пользователей 
+chown www-data     var/www/html/images     #сделать www-data владельцем файла
+cnmod u+rw         var/www/html/images     #дать www-data право чтения/записи
+chown :www-data    var/www/html/images     #установить  группу www-data владельцем
+cnmod g+r+W        var/www/html/images     #дать www-data право чтения/записи
+
+
+ 
+
