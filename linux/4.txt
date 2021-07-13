@@ -1,0 +1,6 @@
+cd var/www/html/logs     #переход в папку logs
+
+
+
+ 
+

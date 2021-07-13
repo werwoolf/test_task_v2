@@ -1,0 +1,4 @@
+﻿1. db.posts.find().skip(5).limit(10).sort( { "author" : 1})
+2. db.posts.find({"propetries.dislike": {$lt : 100}})
+3. db.posts.update({"propetries.author":"a1"},{$inc: {"propetries.like":1}})
+4. db.posts.aggregate( [ {$group :{ _id : "$propetries.title", total_value: { $sum : "$propetries.like" }}}, {$project: {_id: 0,total_value: 1, title: "$_id"}} ] )
