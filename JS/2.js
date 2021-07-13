@@ -16,6 +16,7 @@ function chunkArray(arr, n) {
   console.log(rezult);
   return rezult
 }
+
 let rez = chunkArray(arr, 3)
 
 

@@ -15,21 +15,3 @@ function firstUnique(arr){
 
 console.log(firstUnique(arr)) 
 
-
-
-
-
-
-
-
-
-
-// function firstUnique(arr) {
-//   let uniqAr = [];
-//   arr.forEach((element, index) => {
-//     let inAr = arr.slice(index + 1);
-//     console.log(element);
-//   });
-// }
-
-
