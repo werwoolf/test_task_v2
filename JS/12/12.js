@@ -110,10 +110,12 @@ function truePassword() {
 
 
 function validAll(){
-  // console.log(trueEmail()&&Filevalidation ()&&ageValidation()&&nameValidation()&&lastNameValidation()&&truePassword())
+  let but = document.querySelector(".subButton button")
   if(trueEmail()&&Filevalidation ()&&ageValidation()&&nameValidation()&&lastNameValidation()&&truePassword()){
-    let but = document.querySelector(".subButton button")
+    
     but.removeAttribute("disabled")
+  }else{
+    but.setAttribute("disabled", "disabled")
   }
 }
 
