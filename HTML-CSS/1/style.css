@@ -1,0 +1,46 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "h h"
+    "n n"
+    "c s"
+    "f f";
+  grid-template-rows: 4fr 3fr 35fr 4fr;
+  grid-template-columns: 10fr 4fr;
+  grid-gap: 10px;
+  font-size: 35px;
+  text-align: center;
+  height: 98vh;
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+  grid-area: h;
+  border: 1px solid;
+  top: 50%;
+  vertical-align: middle;
+  display: table;
+}
+
+.container {
+  display: table-cell;
+  vertical-align: middle;
+}
+nav {
+  grid-area: n;
+}
+
+main {
+  grid-area: c;
+}
+
+aside {
+  grid-area: s;
+}
+
+footer {
+  grid-area: f;
+}
