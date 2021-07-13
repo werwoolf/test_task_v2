@@ -9,14 +9,14 @@
   </head>
   <body>
 
-    <main>
+    <main onclick="validAll()">
       <div class="inEmail">Введите ваш email:<br> <input type="email"  class="email" onchange="trueEmail()" /></div>
       <div class="inAvatar">Выберите аватарку <br>(размер до 1 Мб)<br><input type="file" accept="image/png" class="file" onchange="Filevalidation()" /></div>
       <div class="inAge">Ваш возраст:<br> <input type="text"pattern="\d [0-9]" class="age" onchange="ageValidation()" /></div>
       <div class="inName"> Имя : <br> <input type="text" onchange="nameValidation()" class="name" /></div>
       <div class="inLastName">Фамилия :<br> <input type="text"  class="lastName" onchange="lastNameValidation()" /></div>
       <div class="inPassword">Введите пароль:<br> <input type="password"  class="password" onchange="truePassword()" /></div>
-     <button class="subButton" disabled="true"> Подтвердить</button>
+      <div  class="subButton"><button  disabled > Подтвердить</button></div>
     </main>
 <script src="12.js"></script>
   </body>

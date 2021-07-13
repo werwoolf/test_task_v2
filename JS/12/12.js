@@ -8,7 +8,6 @@ function trueEmail() {
     return true;
   } else {
     inEmail.style.color = "red";
-    console.log(valEmail);
     return false;
   }
 }
@@ -33,7 +32,6 @@ function ageValidation(){
   let age = document.querySelector(".age").value
   let inAge = document.querySelector(".inAge");
   let re = /^(\d){1,3}$/g
-  console.log(age)
   if(re.test(String(age))){
     inAge.style.color = "black";
     return true
@@ -48,7 +46,6 @@ function nameValidation(){
   let name = document.querySelector(".name").value
   let inName = document.querySelector(".inName");
   if(name.length >1 ){
-    console.log('good')
     inName.style.color = "black";
     return true
   }else{
@@ -62,7 +59,7 @@ function lastNameValidation(){
   let lastName = document.querySelector(".lastName").value
   let inLastName = document.querySelector(".inLastName");
   if(lastName.length >1 ){
-    console.log('good')
+   
     inLastName.style.color = "black";
     return true
   }else{
@@ -81,10 +78,19 @@ function truePassword() {
     return true;
   } else {
     inPassword.style.color = "red";
-    console.log(valPassword);
+
     return false;
   }
 }
 
+
+function validAll(){
+  // console.log(trueEmail()&&Filevalidation ()&&ageValidation()&&nameValidation()&&lastNameValidation()&&truePassword())
+  if(trueEmail()&&Filevalidation ()&&ageValidation()&&nameValidation()&&lastNameValidation()&&truePassword()){
+    let but = document.querySelector(".subButton button")
+    console.log("but")
+    but.removeAttribute("disabled")
+  }
+}
 
 
