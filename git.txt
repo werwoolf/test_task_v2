@@ -1,7 +1,6 @@
 ﻿в корневой папке проекта нажимаем правую кнопку мыши и выбираем Git Bash Here
-git init                      #создаем репозиторий проекта
-git add *                     #добавление всех файлов в репозиторий
-git commit -m "first commit"  #сохрание изменений
+git init                                                 #создаем репозиторий проекта
+git  add *                                               #добавление всех файлов в репозиторий
+git commit -m "first commit"                             #сохрание изменений
 git remote add origin  git@example.com:example/test.git  #подключение внешнего репозитория
-git push -u origin master  #выгрузка в удаленный репозиторий
-
+git push -u origin master                                #выгрузка в удаленный репозиторий
