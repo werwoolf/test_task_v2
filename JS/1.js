@@ -13,13 +13,10 @@ if(x===y){
             if(! deepEqual(x[propName], y[propName]) ){ е
                 return false;
             }
-
        }
     }
 } 
 return true;
 }
-
-
 
 console.log(deepEqual({name: 'test'}, {name: 'test'})) 
